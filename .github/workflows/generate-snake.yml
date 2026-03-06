@@ -32,14 +32,6 @@ jobs:
                   options: username=${{ github.repository_owner }}&show_icons=true
                   path: dist/readme-tools_github-readme-stats.svg
                   token: ${{ secrets.GITHUB_TOKEN }}
-
-            - name: Generate pin card
-              uses: readme-tools/github-readme-stats-action@v1
-              with:
-                  card: pin
-                  options: username=wheakerd
-                  path: dist/readme-tools_github-readme-stats.svg
-                  token: ${{ secrets.GITHUB_TOKEN }}
         
             # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
             -   name: Generate github-contribution-grid-snake.svg

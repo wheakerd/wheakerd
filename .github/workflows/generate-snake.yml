@@ -3,7 +3,7 @@ name: generate animation
 on:
     # run automatically every 24 hours
     schedule:
-        -   cron: "0 */24 * * *"
+        -   cron: "0 0 * * *"
 
     # allows to manually run the job at any time
     workflow_dispatch:
@@ -14,15 +14,43 @@ on:
             - main
 
 jobs:
-    generate:
+    build:
+        runs-on: ubuntu-latest
+
         permissions:
             contents: write
-        runs-on: ubuntu-latest
-        timeout-minutes: 5
+        
+        timeout-minutes: 60
 
         steps:
+            - uses: actions/checkout@v6
+
+            - name: Generate stats card
+              uses: readme-tools/github-readme-stats-action@v1
+              with:
+                  card: stats
+                  options: username=${{ github.repository_owner }}&show_icons=true
+                  path: dist/stats.svg
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Generate top languages card
+              uses: readme-tools/github-readme-stats-action@v1
+              with:
+                  card: top-langs
+                  options: username=${{ github.repository_owner }}&layout=compact&langs_count=6
+                  path: dist/top-langs.svg
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Generate pin card
+              uses: readme-tools/github-readme-stats-action@v1
+              with:
+                  card: pin
+                  options: username=readme-tools&repo=github-readme-stats
+                  path: dist/pin-readme-tools-github-readme-stats.svg
+                  token: ${{ secrets.GITHUB_TOKEN }}
+        
             # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-            -   name: generate github-contribution-grid-snake.svg
+            -   name: Generate github-contribution-grid-snake.svg
                 uses: Platane/snk/svg-only@v3
                 with:
                     github_user_name: ${{ github.repository_owner }}

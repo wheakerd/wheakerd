@@ -30,7 +30,7 @@ jobs:
               with:
                   card: stats
                   options: username=${{ github.repository_owner }}&show_icons=true
-                  path: dist/stats.svg
+                  path: dist/readme-tools_github-readme-stats.svg
                   token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Generate pin card
@@ -38,7 +38,7 @@ jobs:
               with:
                   card: pin
                   options: username=wheakerd
-                  path: dist/pin-readme-tools-github-readme-stats.svg
+                  path: dist/readme-tools_github-readme-stats.svg
                   token: ${{ secrets.GITHUB_TOKEN }}
         
             # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
@@ -47,8 +47,8 @@ jobs:
                 with:
                     github_user_name: ${{ github.repository_owner }}
                     outputs: |
-                        dist/github-contribution-grid-snake.svg
-                        dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+                        dist/platane_grid_snake.svg
+                        dist/platane_grid_snake-dark.svg?palette=github-dark
             
 
             # push the content of <build_dir> to a branch

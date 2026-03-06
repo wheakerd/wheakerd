@@ -40,7 +40,7 @@ Distributions I actively use:
 
 ### 📈 GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=wheakerd&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
+<img src="https://raw.githubusercontent.com/wheakerd/wheakerd/output/readme-tools_github-readme-stats.svg" alt="GitHub Stats" />
 
 ---
 
@@ -51,7 +51,7 @@ Distributions I actively use:
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wheakerd/wheakerd/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wheakerd/wheakerd/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/wheakerd/wheakerd/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wheakerd/wheakerd/output/platane_grid_snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wheakerd/wheakerd/output/platane_grid_snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/wheakerd/wheakerd/output/platane_grid_snake.svg">
 </picture>

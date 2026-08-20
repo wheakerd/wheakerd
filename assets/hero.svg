@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">Wheakerd — systems architect and infrastructure engineer</title>
+  <desc id="description">An animated systems-interface banner with a static Wheakerd wordmark, typed specialties, and light trails around an execution model.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05080f" />
+      <stop offset="0.58" stop-color="#08111d" />
+      <stop offset="1" stop-color="#091624" />
+    </linearGradient>
+    <linearGradient id="name-fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8fafc" />
+      <stop offset="0.68" stop-color="#d9fff8" />
+      <stop offset="1" stop-color="#73e7d3" />
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#5eead4" />
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="trace-stroke" x1="18" y1="24" x2="304" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4bf" />
+      <stop offset="0.52" stop-color="#99f6e4" />
+      <stop offset="1" stop-color="#38bdf8" />
+    </linearGradient>
+    <radialGradient id="ambient" cx="0.85" cy="0.2" r="0.75">
+      <stop offset="0" stop-color="#0d9488" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#0d9488" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="micro-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#8ca5b8" stroke-opacity="0.045" />
+      <circle cx="1" cy="1" r="0.8" fill="#9bb4c7" fill-opacity="0.1" />
+    </pattern>
+    <filter id="soft-glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="tagline-one-reveal" clipPathUnits="userSpaceOnUse">
+      <rect x="28" y="-17" width="452" height="27">
+        <animate attributeName="width" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;11;21;32;42;53;63;74;84;95;105;116;126;137;147;158;168;179;189;200;210;221;231;242;252;263;273;284;294;305;315;326;336;347;357;368;378;389;399;410;420;431;441;452;452;441;431;420;410;399;389;378;368;357;347;336;326;315;305;294;284;273;263;252;242;231;221;210;200;189;179;168;158;147;137;126;116;105;95;84;74;63;53;42;32;21;11;0;0" keyTimes="0;0.15;0.15326;0.15651;0.15977;0.16302;0.16628;0.16953;0.17279;0.17605;0.1793;0.18256;0.18581;0.18907;0.19233;0.19558;0.19884;0.20209;0.20535;0.2086;0.21186;0.21512;0.21837;0.22163;0.22488;0.22814;0.2314;0.23465;0.23791;0.24116;0.24442;0.24767;0.25093;0.25419;0.25744;0.2607;0.26395;0.26721;0.27047;0.27372;0.27698;0.28023;0.28349;0.28674;0.29;0.32;0.32093;0.32186;0.32279;0.32372;0.32465;0.32558;0.32651;0.32744;0.32837;0.3293;0.33023;0.33116;0.33209;0.33302;0.33395;0.33488;0.33581;0.33674;0.33767;0.3386;0.33953;0.34047;0.3414;0.34233;0.34326;0.34419;0.34512;0.34605;0.34698;0.34791;0.34884;0.34977;0.3507;0.35163;0.35256;0.35349;0.35442;0.35535;0.35628;0.35721;0.35814;0.35907;0.36;1" />
+      </rect>
+    </clipPath>
+    <clipPath id="tagline-two-reveal" clipPathUnits="userSpaceOnUse">
+      <rect x="28" y="-17" width="462" height="27">
+        <animate attributeName="width" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;11;21;32;42;53;63;74;84;95;105;116;126;137;147;158;168;179;189;200;210;221;231;242;252;263;273;284;294;305;315;326;336;347;357;368;378;389;399;410;420;431;441;452;462;462;452;441;431;420;410;399;389;378;368;357;347;336;326;315;305;294;284;273;263;252;242;231;221;210;200;189;179;168;158;147;137;126;116;105;95;84;74;63;53;42;32;21;11;0;0" keyTimes="0;0.36;0.36318;0.36636;0.36955;0.37273;0.37591;0.37909;0.38227;0.38545;0.38864;0.39182;0.395;0.39818;0.40136;0.40455;0.40773;0.41091;0.41409;0.41727;0.42045;0.42364;0.42682;0.43;0.43318;0.43636;0.43955;0.44273;0.44591;0.44909;0.45227;0.45545;0.45864;0.46182;0.465;0.46818;0.47136;0.47455;0.47773;0.48091;0.48409;0.48727;0.49045;0.49364;0.49682;0.5;0.53;0.53091;0.53182;0.53273;0.53364;0.53455;0.53545;0.53636;0.53727;0.53818;0.53909;0.54;0.54091;0.54182;0.54273;0.54364;0.54455;0.54545;0.54636;0.54727;0.54818;0.54909;0.55;0.55091;0.55182;0.55273;0.55364;0.55455;0.55545;0.55636;0.55727;0.55818;0.55909;0.56;0.56091;0.56182;0.56273;0.56364;0.56455;0.56545;0.56636;0.56727;0.56818;0.56909;0.57;1" />
+      </rect>
+    </clipPath>
+    <clipPath id="tagline-three-reveal" clipPathUnits="userSpaceOnUse">
+      <rect x="28" y="-17" width="482" height="27">
+        <animate attributeName="width" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;10;21;31;42;52;63;73;84;94;105;115;126;136;147;157;168;178;189;199;210;220;231;241;251;262;272;283;293;304;314;325;335;346;356;367;377;388;398;409;419;430;440;451;461;472;482;482;472;461;451;440;430;419;409;398;388;377;367;356;346;335;325;314;304;293;283;272;262;251;241;231;220;210;199;189;178;168;157;147;136;126;115;105;94;84;73;63;52;42;31;21;10;0;0" keyTimes="0;0.57;0.57348;0.57696;0.58043;0.58391;0.58739;0.59087;0.59435;0.59783;0.6013;0.60478;0.60826;0.61174;0.61522;0.6187;0.62217;0.62565;0.62913;0.63261;0.63609;0.63957;0.64304;0.64652;0.65;0.65348;0.65696;0.66043;0.66391;0.66739;0.67087;0.67435;0.67783;0.6813;0.68478;0.68826;0.69174;0.69522;0.6987;0.70217;0.70565;0.70913;0.71261;0.71609;0.71957;0.72304;0.72652;0.73;0.81;0.81152;0.81304;0.81457;0.81609;0.81761;0.81913;0.82065;0.82217;0.8237;0.82522;0.82674;0.82826;0.82978;0.8313;0.83283;0.83435;0.83587;0.83739;0.83891;0.84043;0.84196;0.84348;0.845;0.84652;0.84804;0.84957;0.85109;0.85261;0.85413;0.85565;0.85717;0.8587;0.86022;0.86174;0.86326;0.86478;0.8663;0.86783;0.86935;0.87087;0.87239;0.87391;0.87543;0.87696;0.87848;0.88;1" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", Consolas, monospace; }
+    .micro { fill: #60758a; font-size: 10px; font-weight: 650; letter-spacing: 2.2px; }
+    .label { fill: #8da2b5; font-size: 11px; font-weight: 700; letter-spacing: 2.4px; }
+    .rail-label { fill: #5f7488; font-size: 9px; font-weight: 700; letter-spacing: 1.8px; }
+    .rail-value { fill: #c9d5df; font-size: 12px; font-weight: 650; letter-spacing: 0.8px; }
+    .cursor { animation: cursor-blink 0.72s steps(1) infinite; }
+    .status-dot { animation: status-pulse 2.4s ease-in-out infinite; }
+    .scan-line { animation: scan-line 6s ease-in-out infinite; }
+    @keyframes cursor-blink { 0%, 52% { opacity: 1; } 53%, 100% { opacity: 0; } }
+    @keyframes status-pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+    @keyframes scan-line { 0%, 100% { transform: translateY(-120px); opacity: 0; } 18%, 82% { opacity: 0.32; } 50% { transform: translateY(240px); opacity: 0.12; } }
+  </style>
+
+  <rect width="1200" height="360" rx="22" fill="url(#background)" />
+  <rect width="1200" height="360" rx="22" fill="url(#micro-grid)" />
+  <rect width="1200" height="360" rx="22" fill="url(#ambient)" />
+  <rect x="0.75" y="0.75" width="1198.5" height="358.5" rx="21.25" fill="none" stroke="#172538" stroke-width="1.5" />
+
+  <g opacity="0.18">
+    <rect class="scan-line" x="42" y="112" width="1116" height="1" fill="url(#signal)" />
+  </g>
+
+  <!-- Header rail -->
+  <g transform="translate(48 38)">
+    <rect width="1104" height="42" rx="10" fill="#08111c" fill-opacity="0.82" stroke="#1b2c3e" />
+    <path d="M0 13V0h13" fill="none" stroke="#5eead4" stroke-width="1.5" />
+    <path d="M1091 42h13V29" fill="none" stroke="#28475a" stroke-width="1.5" />
+    <circle class="status-dot" cx="22" cy="21" r="3.5" fill="#5eead4" />
+    <text class="micro" x="35" y="25">WHEAKERD / ENGINEERING PROFILE</text>
+    <text class="micro" x="1078" y="25" text-anchor="end">SYSTEM STATUS / BUILDING</text>
+  </g>
+
+  <!-- Main identity -->
+  <g transform="translate(72 116)">
+    <text class="label" x="0" y="0">01 / IDENTITY</text>
+    <text
+      x="0"
+      y="70"
+      fill="url(#name-fill)"
+      font-size="72"
+      font-weight="800"
+      letter-spacing="8"
+      filter="url(#soft-glow)"
+    >WHEAKERD</text>
+
+    <g transform="translate(0 108)">
+      <path d="M0 0h16" stroke="#5eead4" stroke-width="2" />
+      <text x="28" y="5" fill="#c7d6df" font-size="15" font-weight="600" letter-spacing="1.1" opacity="1" clip-path="url(#tagline-one-reveal)">
+        BACKEND SYSTEMS / HIGH-CONCURRENCY RUNTIMES
+        <animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.14999;0.15;0.35999;0.36;1" />
+      </text>
+      <text x="28" y="5" fill="#c7d6df" font-size="15" font-weight="600" letter-spacing="1.1" opacity="0" clip-path="url(#tagline-two-reveal)">
+        DISTRIBUTED SERVICES / LINUX-NATIVE DELIVERY
+        <animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.35999;0.36;0.56999;0.57;1" />
+      </text>
+      <text x="28" y="5" fill="#c7d6df" font-size="15" font-weight="600" letter-spacing="1.1" opacity="0" clip-path="url(#tagline-three-reveal)">
+        PHP + SWOOLE / GO + RUST / OPEN-SOURCE TOOLING
+        <animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.56999;0.57;0.87999;0.88;1" />
+      </text>
+      <g opacity="1">
+        <animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.14999;0.15;0.35999;0.36;1" />
+        <rect class="cursor" x="480" y="-16" width="2.5" height="22" rx="1.25" fill="#5eead4">
+          <animate attributeName="x" dur="15s" repeatCount="indefinite" calcMode="discrete" values="28;28;39;49;60;70;81;91;102;112;123;133;144;154;165;175;186;196;207;217;228;238;249;259;270;280;291;301;312;322;333;343;354;364;375;385;396;406;417;427;438;448;459;469;480;480;469;459;448;438;427;417;406;396;385;375;364;354;343;333;322;312;301;291;280;270;259;249;238;228;217;207;196;186;175;165;154;144;133;123;112;102;91;81;70;60;49;39;28;28" keyTimes="0;0.15;0.15326;0.15651;0.15977;0.16302;0.16628;0.16953;0.17279;0.17605;0.1793;0.18256;0.18581;0.18907;0.19233;0.19558;0.19884;0.20209;0.20535;0.2086;0.21186;0.21512;0.21837;0.22163;0.22488;0.22814;0.2314;0.23465;0.23791;0.24116;0.24442;0.24767;0.25093;0.25419;0.25744;0.2607;0.26395;0.26721;0.27047;0.27372;0.27698;0.28023;0.28349;0.28674;0.29;0.32;0.32093;0.32186;0.32279;0.32372;0.32465;0.32558;0.32651;0.32744;0.32837;0.3293;0.33023;0.33116;0.33209;0.33302;0.33395;0.33488;0.33581;0.33674;0.33767;0.3386;0.33953;0.34047;0.3414;0.34233;0.34326;0.34419;0.34512;0.34605;0.34698;0.34791;0.34884;0.34977;0.3507;0.35163;0.35256;0.35349;0.35442;0.35535;0.35628;0.35721;0.35814;0.35907;0.36;1" />
+        </rect>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.35999;0.36;0.56999;0.57;1" />
+        <rect class="cursor" x="490" y="-16" width="2.5" height="22" rx="1.25" fill="#5eead4">
+          <animate attributeName="x" dur="15s" repeatCount="indefinite" calcMode="discrete" values="28;28;39;49;60;70;81;91;102;112;123;133;144;154;165;175;186;196;207;217;228;238;249;259;270;280;291;301;312;322;333;343;354;364;375;385;396;406;417;427;438;448;459;469;480;490;490;480;469;459;448;438;427;417;406;396;385;375;364;354;343;333;322;312;301;291;280;270;259;249;238;228;217;207;196;186;175;165;154;144;133;123;112;102;91;81;70;60;49;39;28;28" keyTimes="0;0.36;0.36318;0.36636;0.36955;0.37273;0.37591;0.37909;0.38227;0.38545;0.38864;0.39182;0.395;0.39818;0.40136;0.40455;0.40773;0.41091;0.41409;0.41727;0.42045;0.42364;0.42682;0.43;0.43318;0.43636;0.43955;0.44273;0.44591;0.44909;0.45227;0.45545;0.45864;0.46182;0.465;0.46818;0.47136;0.47455;0.47773;0.48091;0.48409;0.48727;0.49045;0.49364;0.49682;0.5;0.53;0.53091;0.53182;0.53273;0.53364;0.53455;0.53545;0.53636;0.53727;0.53818;0.53909;0.54;0.54091;0.54182;0.54273;0.54364;0.54455;0.54545;0.54636;0.54727;0.54818;0.54909;0.55;0.55091;0.55182;0.55273;0.55364;0.55455;0.55545;0.55636;0.55727;0.55818;0.55909;0.56;0.56091;0.56182;0.56273;0.56364;0.56455;0.56545;0.56636;0.56727;0.56818;0.56909;0.57;1" />
+        </rect>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.56999;0.57;0.87999;0.88;1" />
+        <rect class="cursor" x="510" y="-16" width="2.5" height="22" rx="1.25" fill="#5eead4">
+          <animate attributeName="x" dur="15s" repeatCount="indefinite" calcMode="discrete" values="28;28;38;49;59;70;80;91;101;112;122;133;143;154;164;175;185;196;206;217;227;238;248;259;269;279;290;300;311;321;332;342;353;363;374;384;395;405;416;426;437;447;458;468;479;489;500;510;510;500;489;479;468;458;447;437;426;416;405;395;384;374;363;353;342;332;321;311;300;290;279;269;259;248;238;227;217;206;196;185;175;164;154;143;133;122;112;101;91;80;70;59;49;38;28;28" keyTimes="0;0.57;0.57348;0.57696;0.58043;0.58391;0.58739;0.59087;0.59435;0.59783;0.6013;0.60478;0.60826;0.61174;0.61522;0.6187;0.62217;0.62565;0.62913;0.63261;0.63609;0.63957;0.64304;0.64652;0.65;0.65348;0.65696;0.66043;0.66391;0.66739;0.67087;0.67435;0.67783;0.6813;0.68478;0.68826;0.69174;0.69522;0.6987;0.70217;0.70565;0.70913;0.71261;0.71609;0.71957;0.72304;0.72652;0.73;0.81;0.81152;0.81304;0.81457;0.81609;0.81761;0.81913;0.82065;0.82217;0.8237;0.82522;0.82674;0.82826;0.82978;0.8313;0.83283;0.83435;0.83587;0.83739;0.83891;0.84043;0.84196;0.84348;0.845;0.84652;0.84804;0.84957;0.85109;0.85261;0.85413;0.85565;0.85717;0.8587;0.86022;0.86174;0.86326;0.86478;0.8663;0.86783;0.86935;0.87087;0.87239;0.87391;0.87543;0.87696;0.87848;0.88;1" />
+        </rect>
+      </g>
+    </g>
+  </g>
+
+  <!-- Execution model -->
+  <g transform="translate(806 106)">
+    <text class="label" x="0" y="0">02 / EXECUTION MODEL</text>
+    <text class="micro" x="322" y="0" text-anchor="end" fill="#5eead4">LIVE TRACE</text>
+
+    <g transform="translate(0 26)">
+      <path d="M18 24H304V116H18Z" fill="#07101a" fill-opacity="0.64" stroke="#203449" />
+
+      <g fill="none" stroke="url(#trace-stroke)" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 24H304V116H18Z" pathLength="100" stroke-width="6" stroke-opacity="0.16" stroke-dasharray="100 100" stroke-dashoffset="100" filter="url(#soft-glow)">
+          <animate attributeName="stroke-dashoffset" values="100;0;-100" keyTimes="0;0.5;1" dur="4.8s" repeatCount="indefinite" />
+          <animate attributeName="stroke-opacity" values="0;0.2;0.2;0" keyTimes="0;0.08;0.9;1" dur="4.8s" repeatCount="indefinite" />
+        </path>
+        <path d="M18 24H304V116H18Z" pathLength="100" stroke-width="1.8" stroke-opacity="0.92" stroke-dasharray="100 100" stroke-dashoffset="100">
+          <animate attributeName="stroke-dashoffset" values="100;0;-100" keyTimes="0;0.5;1" dur="4.8s" repeatCount="indefinite" />
+          <animate attributeName="stroke-opacity" values="0;0.95;0.95;0" keyTimes="0;0.08;0.9;1" dur="4.8s" repeatCount="indefinite" />
+        </path>
+        <path d="M24 30H298V110H24Z" pathLength="100" stroke-width="0.8" stroke-opacity="0.46" stroke-dasharray="100 100" stroke-dashoffset="100">
+          <animate attributeName="stroke-dashoffset" values="100;0;-100" keyTimes="0;0.5;1" dur="5.6s" begin="1.4s" repeatCount="indefinite" />
+          <animate attributeName="stroke-opacity" values="0;0.52;0.52;0" keyTimes="0;0.1;0.88;1" dur="5.6s" begin="1.4s" repeatCount="indefinite" />
+        </path>
+      </g>
+
+      <g transform="translate(34 42)">
+        <text class="rail-label" x="0" y="0">01 / REQUEST</text>
+        <text class="rail-value" x="0" y="20">INPUT</text>
+      </g>
+      <g transform="translate(188 42)">
+        <text class="rail-label" x="0" y="0">02 / RUNTIME</text>
+        <text class="rail-value" x="0" y="20">DISPATCH</text>
+      </g>
+      <g transform="translate(188 92)">
+        <text class="rail-label" x="0" y="0">03 / WORKERS</text>
+        <text class="rail-value" x="0" y="20">COROUTINE</text>
+      </g>
+      <g transform="translate(34 92)">
+        <text class="rail-label" x="0" y="0">04 / OUTPUT</text>
+        <text class="rail-value" x="0" y="20">DELIVER</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- Bottom capability rail -->
+  <g transform="translate(48 278)">
+    <rect width="1104" height="54" rx="11" fill="#080f19" fill-opacity="0.88" stroke="#1c2c3e" />
+    <path d="M276 10v34M552 10v34M828 10v34" stroke="#1e3042" />
+
+    <g transform="translate(20 17)">
+      <text class="rail-label" x="0" y="0">CORE</text>
+      <text class="rail-value" x="0" y="21">PHP 8.4 + SWOOLE</text>
+    </g>
+    <g transform="translate(296 17)">
+      <text class="rail-label" x="0" y="0">SYSTEMS</text>
+      <text class="rail-value" x="0" y="21">GO · RUST · C/C++</text>
+    </g>
+    <g transform="translate(572 17)">
+      <text class="rail-label" x="0" y="0">PLATFORM</text>
+      <text class="rail-value" x="0" y="21">LINUX · DOCKER</text>
+    </g>
+    <g transform="translate(848 17)">
+      <text class="rail-label" x="0" y="0">MODE</text>
+      <text class="rail-value" x="0" y="21">BUILDING FOUNDATIONS</text>
+    </g>
+
+    <g fill="#5eead4">
+      <rect x="0" y="0" width="276" height="2" opacity="0.18">
+        <animate attributeName="opacity" values="0.18;0.9;0.18" dur="6.4s" begin="0s" repeatCount="indefinite" />
+      </rect>
+      <rect x="276" y="0" width="276" height="2" opacity="0.18">
+        <animate attributeName="opacity" values="0.18;0.9;0.18" dur="6.4s" begin="1.6s" repeatCount="indefinite" />
+      </rect>
+      <rect x="552" y="0" width="276" height="2" opacity="0.18">
+        <animate attributeName="opacity" values="0.18;0.9;0.18" dur="6.4s" begin="3.2s" repeatCount="indefinite" />
+      </rect>
+      <rect x="828" y="0" width="276" height="2" opacity="0.18">
+        <animate attributeName="opacity" values="0.18;0.9;0.18" dur="6.4s" begin="4.8s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+</svg>

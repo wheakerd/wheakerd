@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 248" role="img" aria-labelledby="title description">
+  <title id="title">wheakerd public GitHub ecosystem</title>
+  <desc id="description">Live public personal and organization repository statistics generated inside the profile repository.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07101f" />
+      <stop offset="0.55" stop-color="#0b1730" />
+      <stop offset="1" stop-color="#11102b" />
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf" />
+      <stop offset="0.5" stop-color="#60a5fa" />
+      <stop offset="1" stop-color="#a78bfa" />
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#94a3b8" stroke-opacity="0.055" />
+    </pattern>
+    <clipPath id="language-clip">
+      <rect width="780" height="12" rx="6" />
+    </clipPath>
+  </defs>
+  <style>
+    text { font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", Consolas, monospace; }
+    .eyebrow { fill: #5eead4; font-size: 12px; font-weight: 700; letter-spacing: 2.5px; }
+    .stamp { fill: #64748b; font-size: 10px; letter-spacing: 1px; }
+    .stat-label { fill: #94a3b8; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; }
+    .stat-value { fill: #f8fafc; font-size: 34px; font-weight: 800; }
+    .legend { fill: #cbd5e1; font-size: 11px; }
+  </style>
+  <rect width="900" height="248" rx="22" fill="url(#background)" />
+  <rect width="900" height="248" rx="22" fill="url(#grid)" />
+  <rect x="1" y="1" width="898" height="246" rx="21" fill="none" stroke="#29364e" />
+  <path d="M22 2h856" stroke="url(#edge)" stroke-width="3" />
+  <text class="eyebrow" x="58" y="44">LIVE PUBLIC ECOSYSTEM // WHEAKERD</text>
+  <text class="stamp" x="842" y="44" text-anchor="end">SYNC 2026-09-06 UTC</text>
+  
+      <g transform="translate(58 82)">
+        <text class="stat-label" x="0" y="0">PUBLIC REPOS</text>
+        <text class="stat-value" x="0" y="48">64</text>
+      </g>
+      <g transform="translate(269 82)">
+        <text class="stat-label" x="0" y="0">ORIGINAL PROJECTS</text>
+        <text class="stat-value" x="0" y="48">7</text>
+      </g>
+      <g transform="translate(480 82)">
+        <text class="stat-label" x="0" y="0">ECOSYSTEM REPOS</text>
+        <text class="stat-value" x="0" y="48">37</text>
+      </g>
+      <g transform="translate(691 82)">
+        <text class="stat-label" x="0" y="0">ON GITHUB SINCE</text>
+        <text class="stat-value" x="0" y="48">2021</text>
+      </g>
+  <g transform="translate(58 174)">
+    <rect width="780" height="12" rx="6" fill="#1e293b" />
+    <g clip-path="url(#language-clip)"><rect x="0.00" y="0" width="758.92" height="12" fill="#2dd4bf" /><rect x="758.92" y="0" width="21.08" height="12" fill="#60a5fa" /></g>
+  </g>
+  
+      <g transform="translate(58 210)">
+        <circle cx="5" cy="-5" r="5" fill="#2dd4bf" />
+        <text class="legend" x="17" y="0">PHP · 36 repos</text>
+      </g>
+      <g transform="translate(213 210)">
+        <circle cx="5" cy="-5" r="5" fill="#60a5fa" />
+        <text class="legend" x="17" y="0">Python · 1 repo</text>
+      </g>
+  <text class="stamp" x="842" y="224" text-anchor="end">SOURCE · GITHUB REST API</text>
+</svg>

@@ -21,19 +21,20 @@
 I am a systems architect and infrastructure engineer focused on PHP runtimes, backend infrastructure, and developer
 tooling. I build framework components, packaging tools, and automation that make systems easier to run and maintain.
 
+<!-- Equal pixel width hints keep GitHub's content-sized table expanded within its available width. -->
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="1000" valign="top">
       <p><img src="./assets/icons/terminal.svg" width="24" height="24" alt="Runtime" /> &nbsp; <samp>RUNTIME</samp></p>
       <h3>PHP + Swoole</h3>
       <p>High-performance PHP<br />runtimes and services.</p>
     </td>
-    <td width="34%" valign="top">
+    <td width="1000" valign="top">
       <p><img src="./assets/icons/layers.svg" width="24" height="24" alt="Systems" /> &nbsp; <samp>SYSTEMS</samp></p>
       <h3>Go · Rust · C/C++</h3>
       <p>Distributed systems,<br />network software, and tooling.</p>
     </td>
-    <td width="33%" valign="top">
+    <td width="1000" valign="top">
       <p><img src="./assets/icons/settings.svg" width="24" height="24" alt="Tooling" /> &nbsp; <samp>TOOLING</samp></p>
       <h3>Linux · Automation</h3>
       <p>Containers, reproducible<br />workflows, and tools.</p>

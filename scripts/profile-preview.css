@@ -78,8 +78,15 @@ td p:last-child { margin: 14px 0 0; }
 td p:last-child code { margin: 0 6px 0 0; }
 #selected-projects + p { margin: -45px 0 24px; font-size: 16px; line-height: 23px; }
 
-/* Native README tables keep the same information order on GitHub. */
-table:has(img[src*="assets/icons/"]) { margin-top: 34px; }
+/* Match GitHub's content-sized table so local CSS cannot hide width regressions. */
+table:has(img[src*="assets/icons/"]) {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  table-layout: auto;
+  margin-top: 34px;
+}
 table:has(img[src*="assets/icons/"]) td { padding: 0 0 0 24px; border: 0; border-left: 1px solid var(--line); }
 table:has(img[src*="assets/icons/"]) td:first-child { padding-left: 0; border-left: 0; }
 table:has(img[src*="assets/icons/"]) td:last-child { padding-right: 0; }
@@ -110,7 +117,7 @@ article > p:last-child { margin-top: 28px; color: var(--muted); font-size: 14px;
   table, tbody, tr, td { display: block; width: 100%; }
   td { padding: 22px; border-bottom: 0; }
   tr:last-child td:last-child { border-bottom: 1px solid var(--line); }
-  table:has(img[src*="assets/icons/"]) { margin-top: 26px; }
+  table:has(img[src*="assets/icons/"]) { width: 100%; margin-top: 26px; }
   table:has(img[src*="assets/icons/"]) td,
   table:has(img[src*="assets/icons/"]) td:first-child,
   table:has(img[src*="assets/icons/"]) td:last-child { padding: 18px 0; border: 0; border-bottom: 1px solid var(--line); }

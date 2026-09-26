@@ -2,6 +2,15 @@
 
 final result: passed
 
+## GitHub focus-table width correction
+
+- The published profile's focus table was 598.55 px wide inside an 846 px container. GitHub's content-sized table styling allowed percentage cell widths to shrink around their contents; the local preview's fixed, full-width table styling had hidden this difference. Adding `width="100%"` to the table alone did not change the rendered width.
+- The three focus cells now use matching `width="1000"` hints. These are preferred widths, constrained by GitHub's table layout: in the inspected desktop profile the table expands to the available 846 px without horizontal overflow. The local focus-table CSS now uses GitHub's block, content-sized, auto-layout behavior while retaining its existing mobile stack.
+- The candidate attributes were tested temporarily in a separate tab on the real GitHub profile page. This checks the current GitHub styles without publishing the local fix; the measured widths above are the verification record.
+- At a 390 px GitHub viewport, the table occupies its 308 px container and retains GitHub's native horizontal scrolling for its 339 px contents; the page itself remains 390 px wide. GitHub does not use the local preview's stacked mobile cards.
+- The refreshed local preview retains all three numeric width attributes after GitHub Markdown rendering. At desktop size the focus row is 904 px wide without overflow; at a 390 px viewport its cells stack at 340 px. Light and dark previews loaded all seven images, and all four section navigation targets exist.
+- This correction changes README width hints and local preview CSS only. The hero, icon geometry, generated theme assets, statistics code, and workflow are unchanged.
+
 ## User-requested revision
 
 The subsequent browser annotation requests removal of the `skernel` and `sse-client` cards. Both cards and their containing row were removed from `README.md`. The refreshed preview contains one project row with only `axiom` and `mimic`, no removed project text, and no horizontal overflow. Screenshot: `dist/design/projects-after-removal.png`. The original four-card composition in the comparison evidence below is superseded by this explicit content change; the retained cards keep their existing appearance.

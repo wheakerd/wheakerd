@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Check out the profile repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Verify committed theme variants
         run: |
@@ -67,7 +67,7 @@ jobs:
             ! grep -Eqi 'something went wrong|resource not accessible by integration' "$file"
           done
 
-          python - <<'PY'
+          python3 - <<'PY'
           from pathlib import Path
           from xml.etree import ElementTree
 
@@ -76,7 +76,7 @@ jobs:
           PY
 
       - name: Publish visuals to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v5.0.0
         with:
           target_branch: output
           build_dir: dist

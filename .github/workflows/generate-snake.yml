@@ -25,9 +25,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Verify committed theme variants
-        run: |
-          node scripts/generate-theme-assets.mjs
-          git diff --exit-code -- assets/hero-light.svg assets/stack-light.svg
+        run: node scripts/generate-theme-assets.mjs --check
 
       - name: Generate repository-owned stats card
         env:

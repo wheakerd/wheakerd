@@ -38,7 +38,7 @@ jobs:
             dist/readme-tools_github-readme-stats-dark.svg
 
       - name: Generate contribution snakes
-        uses: Platane/snk/svg-only@v3.5.0
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
@@ -74,7 +74,7 @@ jobs:
           PY
 
       - name: Publish visuals to the output branch
-        uses: crazy-max/ghaction-github-pages@v5.0.0
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
         with:
           target_branch: output
           build_dir: dist

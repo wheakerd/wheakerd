@@ -217,11 +217,15 @@ function renderSvg(theme) {
     .stat-label { fill: ${palette.statLabel}; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; }
     .stat-value { fill: ${palette.statValue}; font-size: 34px; font-weight: 800; }
     .legend { fill: ${palette.legend}; font-size: 11px; }
+    @media (prefers-reduced-motion: reduce) { .pulse { display: none; } }
   </style>
   <rect width="900" height="248" rx="22" fill="url(#background)" />
   <rect width="900" height="248" rx="22" fill="url(#grid)" />
   <rect x="1" y="1" width="898" height="246" rx="21" fill="none" stroke="${palette.border}" />
   <path d="M22 2h856" stroke="url(#edge)" stroke-width="3" />
+  <path class="pulse" d="M22 2h856" pathLength="100" fill="none" stroke="${palette.eyebrow}" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 90" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="6s" repeatCount="indefinite" />
+  </path>
   <text class="eyebrow" x="58" y="44">LIVE PUBLIC ECOSYSTEM // ${escapeXml(username.toUpperCase())}</text>
   <text class="stamp" x="842" y="44" text-anchor="end">SYNC ${updatedAt} UTC</text>
   ${statMarkup}

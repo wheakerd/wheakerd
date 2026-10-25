@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
   <title id="title">Wheakerd's systems toolbox</title>
-  <desc id="description">Application: PHP, Swoole, TypeScript, Vue, and Java. Systems: Go, Rust, C and C++, Linux, Bash, and Lua. Data and delivery: Docker, Git, Redis, MySQL, PostgreSQL, and CI/CD.</desc>
+  <desc id="description">Application: PHP, Swoole, TypeScript, Vue, and Java. Systems: Go, Rust, C and C++, Linux, Bash, and Lua. Data and delivery: Docker, Git, Redis, MySQL, PostgreSQL, and CI/CD. A faint band of light sweeps across the board.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#050d14" />
@@ -11,9 +11,15 @@
       <stop offset="0.5" stop-color="#5eead4" />
       <stop offset="1" stop-color="#2dd4bf" stop-opacity="0.1" />
     </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#14b8a6" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0" />
+    </linearGradient>
     <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
       <circle cx="1" cy="1" r="1" fill="#94a3b8" fill-opacity="0.05" />
     </pattern>
+    <clipPath id="board-clip"><rect width="1200" height="300" rx="8" /></clipPath>
   </defs>
 
   <style>
@@ -21,6 +27,9 @@
     .group { fill: #a3b3c9; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
     .tech { fill: #e2e8f0; font-size: 15px; font-weight: 650; }
     .tile { fill: #07121b; stroke: #263d49; }
+    @media (prefers-reduced-motion: reduce) {
+      .sweep { display: none; }
+    }
   </style>
 
   <rect width="1200" height="300" rx="8" fill="url(#bg)" />
@@ -58,5 +67,12 @@
     <g transform="translate(184 64)"><rect class="tile" width="168" height="48" rx="6" /><circle cx="22" cy="24" r="6" fill="#4479a1" /><text class="tech" x="38" y="29">MySQL</text></g>
     <g transform="translate(0 128)"><rect class="tile" width="168" height="48" rx="6" /><circle cx="22" cy="24" r="6" fill="#4169e1" /><text class="tech" x="38" y="29">PostgreSQL</text></g>
     <g transform="translate(184 128)"><rect class="tile" width="168" height="48" rx="6" /><circle cx="22" cy="24" r="6" fill="#a78bfa" /><text class="tech" x="38" y="29">CI / CD</text></g>
+  </g>
+
+  <!-- A band of light sweeps across the board; reduced motion hides it. -->
+  <g class="sweep" clip-path="url(#board-clip)">
+    <rect x="0" y="-40" width="220" height="380" fill="url(#sheen)" transform="skewX(-18)">
+      <animateTransform attributeName="transform" type="translate" additive="sum" from="-300 0" to="1500 0" dur="10s" repeatCount="indefinite" />
+    </rect>
   </g>
 </svg>

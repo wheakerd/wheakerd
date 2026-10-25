@@ -18,8 +18,9 @@
 
 ## Systems that stay understandable.
 
-I am a systems architect and infrastructure engineer focused on PHP runtimes, backend infrastructure, and developer
-tooling. I build framework components, packaging tools, and automation that make systems easier to run and maintain.
+I build the layer underneath PHP services: SuperKernel, a component framework for long-running Swoole
+applications; the tooling that packages PHP projects into single binaries; and the automation that keeps running
+systems legible. Most of it is open source, and all of it is written to be read as easily as it runs.
 
 <!-- Equal pixel width hints keep GitHub's content-sized table expanded within its available width. -->
 <table>
@@ -54,8 +55,8 @@ tooling. I build framework components, packaging tools, and automation that make
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/wheakerd/axiom">axiom</a></h3>
-      <p><em>Workflow guardrails for Codex.</em></p>
-      <p>Explicit scope, authorization, evidence, and rollback for consequential actions in AI-assisted development.</p>
+      <p><em>Workflow guardrails for Codex and Claude Code.</em></p>
+      <p>Focused skills that turn a request into clear, reviewable work: intent clarification, task planning, research, decision review, and explicit authorization and rollback for consequential actions.</p>
       <p><code>Developer tooling</code> <code>AI workflows</code></p>
     </td>
     <td width="50%" valign="top">
@@ -67,16 +68,47 @@ tooling. I build framework components, packaging tools, and automation that make
   </tr>
 </table>
 
+Also in progress: [decomposer](https://github.com/wheakerd/decomposer), a deterministic dependency manager for PHP,
+and [prebuilt PHP micro binaries](https://wheakerd.github.io) with an API that picks the right build for a PHP
+version and extension set.
+
 ---
 
 ## SuperKernel
 
-[SuperKernel](https://github.com/super-kernel) brings together reusable PHP components for Swoole applications,
-from bootstrap and dependency injection to HTTP services and runtime context management.
+[SuperKernel](https://github.com/super-kernel) is a component-oriented PHP framework for long-running Swoole
+applications. Every component is its own Composer package under `super-kernel/*`, built on native PHP attributes,
+a PSR-11 container, and the standard PSR interfaces, so an application pulls in exactly the pieces it runs:
+attributes are scanned before the application starts, dependencies are autowired, aspects are woven through source
+transformation, and PSR-3, PSR-7, PSR-14, and PSR-15 keep the rest interoperable.
 
-Start with the [project template](https://github.com/super-kernel/super-kernel-skeleton), or explore the
-[bootstrap](https://github.com/super-kernel/bootstrap), [dependency injection](https://github.com/super-kernel/di),
-and [event dispatcher](https://github.com/super-kernel/event-dispatcher) components.
+It is under active development and not yet released; each repository's `main` branch is the current line.
+
+<details>
+  <summary>Component map</summary>
+  <table>
+    <tr>
+      <td><strong>Runtime</strong></td>
+      <td><a href="https://github.com/super-kernel/swoole"><code>swoole</code></a> <a href="https://github.com/super-kernel/server"><code>server</code></a> <a href="https://github.com/super-kernel/http-server"><code>http-server</code></a> <a href="https://github.com/super-kernel/http-message"><code>http-message</code></a> <a href="https://github.com/super-kernel/process"><code>process</code></a> <a href="https://github.com/super-kernel/pool"><code>pool</code></a></td>
+    </tr>
+    <tr>
+      <td><strong>Container</strong></td>
+      <td><a href="https://github.com/super-kernel/di"><code>di</code></a> <a href="https://github.com/super-kernel/config"><code>config</code></a> <a href="https://github.com/super-kernel/environment"><code>environment</code></a> <a href="https://github.com/super-kernel/context"><code>context</code></a> <a href="https://github.com/super-kernel/contract"><code>contract</code></a></td>
+    </tr>
+    <tr>
+      <td><strong>Metaprogramming</strong></td>
+      <td><a href="https://github.com/super-kernel/attribute"><code>attribute</code></a> <a href="https://github.com/super-kernel/annotator"><code>annotator</code></a> <a href="https://github.com/super-kernel/reflector"><code>reflector</code></a> <a href="https://github.com/super-kernel/tokenizer"><code>tokenizer</code></a> <a href="https://github.com/super-kernel/scan-isolation"><code>scan-isolation</code></a> <a href="https://github.com/super-kernel/aop"><code>aop</code></a> <a href="https://github.com/super-kernel/mimic"><code>mimic</code></a></td>
+    </tr>
+    <tr>
+      <td><strong>Application</strong></td>
+      <td><a href="https://github.com/super-kernel/framework"><code>framework</code></a> <a href="https://github.com/super-kernel/command"><code>command</code></a> <a href="https://github.com/super-kernel/autoloader"><code>autoloader</code></a> <a href="https://github.com/super-kernel/composer"><code>composer</code></a> <a href="https://github.com/super-kernel/composer-source-reference-plugin"><code>composer-source-reference-plugin</code></a> <a href="https://github.com/super-kernel/support"><code>support</code></a></td>
+    </tr>
+    <tr>
+      <td><strong>Operations</strong></td>
+      <td><a href="https://github.com/super-kernel/logger"><code>logger</code></a> <a href="https://github.com/super-kernel/event"><code>event</code></a> <a href="https://github.com/super-kernel/event-dispatcher"><code>event-dispatcher</code></a> <a href="https://github.com/super-kernel/exception-dispatcher"><code>exception-dispatcher</code></a> <a href="https://github.com/super-kernel/filesystem"><code>filesystem</code></a> <a href="https://github.com/super-kernel/redis"><code>redis</code></a></td>
+    </tr>
+  </table>
+</details>
 
 ---
 

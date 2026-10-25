@@ -77,6 +77,12 @@ td p:has(em) { font-size: 18px; }
 td p:last-child { margin: 14px 0 0; }
 td p:last-child code { margin: 0 6px 0 0; }
 #selected-projects + p { margin: -45px 0 24px; font-size: 16px; line-height: 23px; }
+table + p { margin-top: 16px; }
+details { margin: 18px 0 0; }
+summary { cursor: pointer; color: var(--accent); font-weight: 500; }
+details table { margin-top: 12px; }
+details td { padding: 12px 18px; font-size: 16px; line-height: 1.9; }
+details td:first-child { width: 190px; white-space: nowrap; }
 
 /* Match GitHub's content-sized table so local CSS cannot hide width regressions. */
 table:has(img[src*="assets/icons/"]) {

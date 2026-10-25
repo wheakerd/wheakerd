@@ -38,7 +38,7 @@ jobs:
             dist/readme-tools_github-readme-stats-dark.svg
 
       - name: Generate contribution snakes
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@v3.5.0
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |

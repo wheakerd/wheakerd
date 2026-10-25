@@ -7,9 +7,14 @@ on:
   push:
     branches:
       - main
+  # Pull requests run every step except publishing, so an action update from
+  # Dependabot is validated before it is merged.
+  pull_request:
+    branches:
+      - main
 
 concurrency:
-  group: profile-visuals
+  group: profile-visuals-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
@@ -74,6 +79,7 @@ jobs:
           PY
 
       - name: Publish visuals to the output branch
+        if: github.event_name != 'pull_request'
         uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
         with:
           target_branch: output
